@@ -5,15 +5,11 @@ import { getComments, addComment} from '../controllers/commentsController.js';
 
 const router = express.Router();
 
-// GET all locations
-
+// GET all comments 
 router.get('/comments', getComments);
-router.post('/comments', addComment);
 
-// test the route
-// router.get('/comments', (req, res) => {
-//   res.json({test: "test"});
-// })
+// POST a new comment
+router.post('/comments', addComment);
 
 export default router;
 

@@ -1,6 +1,6 @@
 import Comment from '../models/Comments.js';
 
-// // Ctonroller for posting a new location
+// // Controller for posting a new location
 export const addComment = async (req, res) => {
   console.log("adding a comment");
   console.log(req.body);
@@ -27,7 +27,6 @@ export const addComment = async (req, res) => {
   }
 };
 
-console.log(Comment)
 // Controller for getting all locations 
 export const getComments = async (req, res) => {
   console.log("getting comments");
