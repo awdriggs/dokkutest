@@ -10,7 +10,7 @@ dotenv.config();
 
 // Access the MongoDB URI from environment variables
 const mongoURI = process.env.MONGO_URI;
-console.log(mongoURI);
+// console.log(mongoURI); //uncomment to troubleshoot, careful is shows your secrets
 
 mongoose.connect(mongoURI)
   .then(() => console.log("Connected to MongoDB Atlas"))
